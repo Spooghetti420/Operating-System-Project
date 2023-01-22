@@ -1,19 +1,19 @@
 %include "text.asm"
 
-print_char 'H'
-print_char 'e'
-print_char 'l'
-int 0x10
-print_char 'o'
-print_char ' '
-print_char 'w'
-print_char 'o'
-print_char 'r'
-print_char 'l'
-print_char 'd'
-print_char '!'
-print_char 10
-print_char 13
-jmp $
+[org 0x7c00]
+section .text
+    mov ah, TELETYPE
+    mov bx, hello
+start:
+    mov al, [bx]
+    cmp al, 0
+    je end
+    int 0x10
+    inc bx
+    jmp start
+end:
+    jmp $
+
+hello: db "Hello, world!", 10, 13, 0
 
 %include "padding.asm"
