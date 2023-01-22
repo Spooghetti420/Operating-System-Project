@@ -6,3 +6,4 @@ But who can say how long that will take, or how far we'll take it? Until then, w
 * [Full Course on YouTube](https://www.youtube.com/watch?v=mXw9ruZaxzQ)
 * [OSDev Wiki](https://wiki.osdev.org/Expanded_Main_Page)
 * [Assembly Tutorial in a New OS](https://www.youtube.com/watch?v=MwPjvJ9ulSc)
+* [Operating System Beginnings, like above](https://www.youtube.com/watch?v=W3DdyiO3Fy8)
